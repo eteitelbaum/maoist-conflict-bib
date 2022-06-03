@@ -1,0 +1,44 @@
+---
+title: "Maoist Conflict in India"
+subtitle: "An Annotated Bibliography"
+author: 
+  - Emmanuel Teitelbaum, George Washington University
+  - Shiva Sharma, George Washington University
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  pdf_document:
+    citation_package: biblatex
+biblatexoptions: [backend = biber, skipbib = true, labeldateparts = true, isbn = false, annotation = false, url = false, date = year]
+biblio-style: chicago-authordate
+bibliography: maoism.bib
+geometry: margin = 1in
+fontsize: 12pt
+urlcolor: blue
+header-includes: 
+  - \usepackage[american]{babel}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, results="asis")
+library(RefManageR)
+bib <- ReadBib("maoism.bib", check=FALSE)
+```
+
+
+\fullcite{Gomes2015}
+\begin{quote}
+Abstract:
+```{r Gomes2015}
+cat(bib["Gomes2015"]$abstract)
+```
+\end{quote}
+
+*Summary:*
+
+Questions: 
+
+1) Is it true that the NSS data are representative at the district level? For Employment and Unemployment Survey, stratification at the district level only started with the in 2005-06(62nd round) onward. But perhaps it started earlier for the Household Consumer Expenditure Surveys; 
+
+2) How is land inequality calculated for the analysis? Were the binned nature of the landholdings data taken into account?;
+
+3) Are NSS data a good source for measures of inequality? My understanding was that they tended to under-represent the rich households. 
