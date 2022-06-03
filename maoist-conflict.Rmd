@@ -25,6 +25,21 @@ bib <- ReadBib("maoism.bib", check=FALSE)
 ```
 
 
+## Quantitative Studies on Maoism
+
+\fullcite{Dasgupta2017}
+\begin{quote}
+Abstract:
+```{r Dasgupta2017}
+cat(bib["Dasgupta2017"]$abstract)
+```
+\end{quote}
+
+*Summary:*
+
+**bold print**
+
+
 \fullcite{Gomes2015}
 \begin{quote}
 Abstract:
@@ -34,6 +49,8 @@ cat(bib["Gomes2015"]$abstract)
 \end{quote}
 
 *Summary:*
+
+To summarize the article, it says that... 
 
 Questions: 
 
