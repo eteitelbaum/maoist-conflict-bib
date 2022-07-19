@@ -27,6 +27,20 @@ bib <- ReadBib("maoism.bib", check=FALSE)
 
 ## Quantitative Studies on Maoism
 
+\fullcite{Bohara2006}  
+\begin{quote}
+Abstract:
+```{r Bohara2006}
+cat(bib["Bohara2006"]$abstract)
+```
+\end{quote}
+
+*Summary:*
+
+
+
+\bigbreak
+
 \fullcite{Dasgupta2017}
 \begin{quote}
 Abstract:
@@ -37,8 +51,16 @@ cat(bib["Dasgupta2017"]$abstract)
 
 *Summary:*
 
-**bold print**
+This article exploits the unique roll-out of the NREGS program using a difference-in-difference
+analysis to assess the impact of the MNREGA on Maoist violence. They also account for the local state
+capacity using an index based on service delivery for the following: a paved road; ii) a primary school; iii)
+a primary health center; iv) and an agricultural credit cooperative. The authors use the total number of
+violent events and total fatalities as measures of conflict. They find that the roll-out of MNREGA causes a
+large long-run reduction in Maoist violence. However, this is largely in districts “with sufficient pre-
+existing local state capacity to implement the program effectively.” . The data for the analysis comprises
+a district-level dataset using multiple local language press sources between 1999-2009.
 
+\bigbreak
 
 \fullcite{Gomes2015}
 \begin{quote}
@@ -59,3 +81,5 @@ Questions:
 2) How is land inequality calculated for the analysis? Were the binned nature of the landholdings data taken into account?;
 
 3) Are NSS data a good source for measures of inequality? My understanding was that they tended to under-represent the rich households. 
+
+\bigbreak
